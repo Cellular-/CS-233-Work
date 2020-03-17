@@ -13674,13 +13674,35 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[96]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
+
+<span class="nb">sum</span><span class="p">([</span><span class="n">P</span><span class="p">(</span><span class="n">T</span><span class="p">)</span> <span class="o">*</span> <span class="n">math</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">P</span><span class="p">(</span><span class="n">T</span><span class="p">)</span> <span class="o">/</span> <span class="n">Q</span><span class="p">(</span><span class="n">T</span><span class="p">))</span> <span class="k">for</span> <span class="n">T</span> <span class="ow">in</span> <span class="nb">set</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">type</span><span class="p">)])</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[96]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>-2.600046531847004e-14</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -14072,7 +14094,7 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="16.-Do-you-think-modeling-Ptw(T|W1)-would-be-better-with-a-continuous-function-like-a-Gaussian?-Why-or-why-not?">16. Do you think modeling Ptw(T|W1) would be better with a continuous function like a Gaussian? Why or why not?<a class="anchor-link" href="#16.-Do-you-think-modeling-Ptw(T|W1)-would-be-better-with-a-continuous-function-like-a-Gaussian?-Why-or-why-not?">&#182;</a></h2><ul>
-<li>I think a continuous function would be better. There are bound to be some words in a conditional probability that don't have a mapped probability value.</li>
+<li>I think a continuous function would be better. There are bound to be some words in a conditional probability that don't have a mapped probability value and would probably be more accurate than using a smoother value.</li>
 </ul>
 
 </div>
